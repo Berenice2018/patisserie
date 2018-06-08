@@ -15,10 +15,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
+            <!-- video player width matches parent
             <com.google.android.exoplayer2.ui.SimpleExoPlayerView
                 android:id="@+id/videoPlayer"
-                android:layout_height="300dp"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:resize_mode="fixed_width"/>-->
+
+            <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                android:id="@+id/videoPlayer"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:resize_mode="fixed_width"
                 android:layout_marginTop="8dp"
                 android:layout_centerHorizontal="true"/>
 

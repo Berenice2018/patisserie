@@ -190,6 +190,8 @@ public class InstructionsFragment extends Fragment {
                     null);
 
             mBinding.videoPlayer.setPlayer(mPlayer);
+            // exoVideoView.setResizeMode(AspectRatioFrameLayout.RESIZE_MODE_FILL);
+            mPlayer.setVideoScalingMode(C.VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING);
             mPlayer.prepare(mediaSource);
 
             mPlayer.setPlayWhenReady(true);
