@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/donuts">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                android:id="@+id/videoPlayer"
+                android:layout_height="300dp"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"/>
+
+
+            <Button
+                android:id="@+id/previousStepBtn"
+                android:layout_width="@dimen/button_sizes"
+                android:layout_height="@dimen/button_sizes"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_alignBottom="@id/videoPlayer"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="#fff"
+                android:text="prev"/>
+
+            <Button
+                android:id="@+id/nextStepBtn"
+                android:layout_width="@dimen/button_sizes"
+                android:layout_height="@dimen/button_sizes"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="#fff"
+                android:text="next"/>
+
+            <TextView
+                android:id="@+id/instruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:layout_below="@id/videoPlayer"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/round_corner_radius"
+                android:paddingTop="@dimen/instruction_padding"
+                android:paddingRight="@dimen/instruction_padding"
+                android:paddingBottom="80dp"
+                android:paddingLeft="@dimen/instruction_padding"
+                android:background="@drawable/rounded_corners"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/description_fontsize"
+                android:lineSpacingMultiplier="1.5"
+                tools:text="@string/tools_recipe_name"/>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</layout>
+
+
+<!--
+app:resize_mode="fit"
+
+<android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/videoPlayer"
+            android:layout_width="180dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/instruction"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoPlayer"
+            tools:text="lljhljhdf öge erökhkjgkhg zufhg uzfhkg zf v" />
+
+        <Button
+            android:id="@+id/previousStepBtn"
+            android:layout_width="@dimen/button_sizes"
+            android:layout_height="@dimen/button_sizes"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instruction"
+            android:background="@drawable/ic_launcher_background"
+            android:text="prev"/>
+
+        <Button
+            android:id="@+id/nextStepBtn"
+            android:layout_width="@dimen/button_sizes"
+            android:layout_height="@dimen/button_sizes"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instruction"
+            android:background="@drawable/ic_launcher_background"
+            android:text="next"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+-->

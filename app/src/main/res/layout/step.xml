@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/colorSecondary"
+        android:layout_margin="4dp"
+        android:padding="@dimen/horizontal_margin">
+
+        <TextView
+            android:id="@+id/step_number"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:paddingLeft="@dimen/horizontal_margin"
+            tools:text="20"
+            android:fontFamily="@font/cookie"
+            android:textAlignment="viewEnd"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/singleStepShortDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            tools:text="@string/tools_recipe_name"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_list_item"/>
+    </LinearLayout>
+
+</layout>

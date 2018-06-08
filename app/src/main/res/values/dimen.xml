@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_head">32sp</dimen>
+    <dimen name="text_list_item">14sp</dimen>
+
+    <!-- Card view Gridlayout-->
+    <dimen name="vertical_margin">8dp</dimen>
+    <dimen name="horizontal_margin">8dp</dimen>
+    <dimen name="recipe_margin">4dp</dimen>
+    <dimen name="recipeName">28sp</dimen>
+
+
+    <!-- instructions fragment -->
+    <dimen name ="button_sizes">56dp</dimen>
+    <dimen name ="description_fontsize">14sp</dimen>
+    <dimen name ="round_corner_radius">16dp</dimen>
+    <dimen name="instruction_padding">24dp</dimen>
+
+</resources>

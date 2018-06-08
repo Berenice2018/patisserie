@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/vertical_margin"
+                    android:text="@string/ingredients_title"
+                    android:textSize="@dimen/text_head"
+                    android:fontFamily="@font/cookie"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/servings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ingredients_title"
+                    android:fontFamily="@font/cookie"
+                    android:textAlignment="center"
+                    tools:text="90 servings"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/ingredientsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_weight="20"
+                    android:layout_margin="8dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/vertical_margin"
+                    android:text="@string/steps_title"
+                    android:textSize="@dimen/text_head"
+                    android:fontFamily="@font/cookie"
+                    android:textAlignment="center"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/stepList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp" />
+
+
+        </LinearLayout>
+
+
+</layout>
+
+<!--
+                    android:background="#B384ffff"
+android:background="#CCf48fb1" CC = 80% opacity -->

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/horizontal_margin"
+            android:layout_margin="4dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/colorPrimary"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:paddingEnd="@dimen/horizontal_margin"
+                android:textAlignment="viewEnd"
+                android:fontFamily="@font/cookie"
+                android:textSize="18sp"
+                tools:text="1000.09" />
+
+            <TextView
+                android:id="@+id/measure"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                tools:text="TBLSP " />
+
+            <TextView
+                android:id="@+id/ingredientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/horizontal_margin"
+                android:layout_marginStart="@dimen/horizontal_margin"
+                tools:text="@string/tools_recipe_name"/>
+        </LinearLayout>
+
+</layout>

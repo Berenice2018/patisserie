@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Patisserie</string>
+    <string name="ingredients_title">Ingredients</string>
+    <string name="steps_title">Steps</string>
+
+    <!-- Card grid view-->
+    <string name="tools_recipe_name">Cream Cheese Butter Cake</string>
+    <string name="tools_recipe_servings">12</string>
+
+    <string name="noRecipeChosen">No Recipe Chosen.</string>
+    <string name="appwidget_text">appwidget_text content description</string>
+</resources>
